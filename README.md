@@ -15,21 +15,21 @@ Conway's Game of Life is a cellular automaton devised by the British mathematici
 
 ## Introduction
 
-Conway's Game of Life operates on a grid of cells, each of which can be in one of two states: alive or dead. The game evolves through generations, where each cell's state in the next generation is determined by a set of rules based on its current state and the state of its neighbors.
+Conway's Game of Life operates on a grid of cells, each of which can be in one of two states: alive or dead. The game evolves through generations, where each cell's state in the next generation is determined by a set of rules based on its current state and the state of its neighbours.
 
 ## Rules
 
 The rules of Conway's Game of Life are straightforward:
-1. **Underpopulation**: A live cell with fewer than two live neighbors dies.
-2. **Survival**: A live cell with two or three live neighbors remains alive.
-3. **Overpopulation**: A live cell with more than three live neighbors dies.
-4. **Reproduction**: A dead cell with exactly three live neighbors becomes alive.
+1. **Underpopulation**: A live cell with fewer than two live neighbours dies.
+2. **Survival**: A live cell with two or three live neighbours remains alive.
+3. **Overpopulation**: A live cell with more than three live neighbours dies.
+4. **Reproduction**: A dead cell with exactly three live neighbours becomes alive.
 
 These rules create intricate patterns and behaviors from simple initial configurations.
 
 ## Implementation
 
-This implementation of Conway's Game of Life is written in C, utilizing a 2D array to represent the grid of cells. It includes functions to initialize the grid, randomly populate it, calculate the number of live neighbors for each cell, apply the rules to update the grid, and print the grid for visualization.
+This implementation of Conway's Game of Life is written in C, utilising a 2D array to represent the grid of cells. It includes functions to initialise the grid, randomly populate it, calculate the number of live neighbours for each cell, apply the rules to update the grid, and print the grid for visualisation.
 
 ## Usage
 
@@ -38,6 +38,6 @@ This implementation of Conway's Game of Life is written in C, utilizing a 2D arr
 2. **Installation**: Clone the repository and compile the program.
 
 ```bash
-git clone https://github.com/yourusername/conways-game-of-life.git
-cd conways-game-of-life
-gcc game_of_life.c -o game_of_life
+git clone https://github.com/iSam24/Conway-s-Game-of-Life.git
+cd Conway-s-Game-of-Life
+gcc game.c -o game
