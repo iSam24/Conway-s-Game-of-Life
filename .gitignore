@@ -1,0 +1,6 @@
+# Ignore exectutable files
+*.exe
+# Ignore object files and other build artifacts
+*.o
+# Ignore local development settings
+.vscode/
