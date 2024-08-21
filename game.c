@@ -3,9 +3,9 @@
 #include <unistd.h>  
 #include <time.h>
 
-#define ROWS 40
-#define COLS 60 
-#define DELAY 1000000 //(5000,000 microseconds == 0.5s)
+#define ROWS 10
+#define COLS 40 
+#define DELAY 3000000 //(5000,000 microseconds == 0.5s)
 
 void create_grid(int grid[ROWS][COLS]);
 void print_grid(int grid[ROWS][COLS]);
@@ -48,9 +48,11 @@ void print_grid(int grid[ROWS][COLS]){
     for(int i = 0; i < ROWS; i++){
         for(int j = 0; j < COLS; j++){
             if(grid[i][j] == 1) {
-                printf("\033[32m█\033[0m "); // Green for live cells
+                // printf("\033[32m█\033[0m "); // Green for live cells
+                printf("0");
             } else {
-                printf("\033[37m·\033[0m "); // White for dead cells
+                // printf("\033[37m·\033[0m "); // White for dead cells
+                printf("-");
             }
         }
         printf("\n");
